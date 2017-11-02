@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  BaoMonkey
+//
+//  Created by xueyognwei on 19/10/2017.
+//  Copyright © 2017 BaoMonkey. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+//加入需要的头文件，防止混编引起错误
+#import <YYKit.h>
+#import <Masonry.h>
+#import "CoreSVP.h"
+#import <Google/Analytics.h>
+#import "BaseScene.h"
+#endif
+
+
+
+//========================================== //
+
+
+
+#ifdef DEBUG
+//定义一些全局的宏或者全局常量等
+//static const int ddLogLevel = DDLogLevelVerbose;
+//#else
+//static const int ddLogLevel = DDLogLevelError;
+#endif
+
+
+
+#endif /* PrefixHeader_pch */

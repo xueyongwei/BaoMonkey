@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendViewController">
+            <connections>
+                <outlet property="adDescLabel" destination="FlT-na-n0B" id="dpQ-Wc-L7X"/>
+                <outlet property="adIconImageView" destination="eoZ-eA-jB5" id="Rmh-5l-qDA"/>
+                <outlet property="adImageView" destination="FQE-Ii-CqJ" id="LUW-o8-53y"/>
+                <outlet property="adTitleLabel" destination="frG-lu-Zfy" id="k8y-Hu-GVo"/>
+                <outlet property="closeBtn" destination="vsQ-DX-TOR" id="wmH-Xs-XTY"/>
+                <outlet property="downloadBtn" destination="GgR-FK-Jcy" id="Xo1-Gb-2Jq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommendPlaceholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="FQE-Ii-CqJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgR-FK-Jcy">
+                    <rect key="frame" x="20" y="577" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Id4-90-taW"/>
+                    </constraints>
+                    <state key="normal" title="Free Download">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onInstall:" destination="-1" eventType="touchUpInside" id="FKA-AP-z0G"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gorilla-climbing-1" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-eA-jB5">
+                    <rect key="frame" x="20" y="440" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eoZ-eA-jB5" secondAttribute="height" multiplier="1:1" id="Vf2-Mv-zdP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hop jump" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frG-lu-Zfy">
+                    <rect key="frame" x="110" y="440" width="245" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsQ-DX-TOR">
+                    <rect key="frame" x="337.5" y="0.0" width="37.5" height="37.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vsQ-DX-TOR" secondAttribute="height" multiplier="1:1" id="k98-at-MQI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClose:" destination="-1" eventType="touchUpInside" id="rfZ-0g-wl2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUA-Gc-NMG">
+                    <rect key="frame" x="10" y="641" width="18.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="good game very good!" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlT-na-n0B">
+                    <rect key="frame" x="110" y="484" width="245" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FQE-Ii-CqJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4hI-iG-8F5"/>
+                <constraint firstItem="eoZ-eA-jB5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="5md-Ej-g6j"/>
+                <constraint firstItem="XUA-Gc-NMG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="60T-LG-OVJ"/>
+                <constraint firstAttribute="bottom" secondItem="XUA-Gc-NMG" secondAttribute="bottom" constant="10" id="6sn-1j-HMU"/>
+                <constraint firstAttribute="trailing" secondItem="FQE-Ii-CqJ" secondAttribute="trailing" id="7gu-rA-JBe"/>
+                <constraint firstItem="FlT-na-n0B" firstAttribute="leading" secondItem="frG-lu-Zfy" secondAttribute="leading" id="9DI-AU-ro7"/>
+                <constraint firstItem="vsQ-DX-TOR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.1" id="CKI-Ba-xao"/>
+                <constraint firstItem="FQE-Ii-CqJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HJX-In-43U"/>
+                <constraint firstAttribute="trailing" secondItem="frG-lu-Zfy" secondAttribute="trailing" constant="20" id="L2G-FC-s1H"/>
+                <constraint firstItem="FlT-na-n0B" firstAttribute="top" secondItem="frG-lu-Zfy" secondAttribute="bottom" constant="20" id="Mjs-CA-Gxr"/>
+                <constraint firstAttribute="trailing" secondItem="FlT-na-n0B" secondAttribute="trailing" constant="20" id="Qka-qV-RxW"/>
+                <constraint firstItem="FQE-Ii-CqJ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" id="acG-JY-jsz"/>
+                <constraint firstAttribute="trailing" secondItem="vsQ-DX-TOR" secondAttribute="trailing" id="b87-Ct-bUn"/>
+                <constraint firstItem="eoZ-eA-jB5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.2" id="bTv-6Q-3ZQ"/>
+                <constraint firstItem="frG-lu-Zfy" firstAttribute="top" secondItem="eoZ-eA-jB5" secondAttribute="top" id="c7U-Xr-bkD"/>
+                <constraint firstItem="eoZ-eA-jB5" firstAttribute="top" secondItem="FQE-Ii-CqJ" secondAttribute="bottom" constant="40" id="ddb-Oq-sLg"/>
+                <constraint firstItem="frG-lu-Zfy" firstAttribute="leading" secondItem="eoZ-eA-jB5" secondAttribute="trailing" constant="15" id="khj-kW-05R"/>
+                <constraint firstItem="GgR-FK-Jcy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qvk-UV-Vp9"/>
+                <constraint firstAttribute="bottom" secondItem="GgR-FK-Jcy" secondAttribute="bottom" constant="40" id="r1g-8v-0kt"/>
+                <constraint firstItem="vsQ-DX-TOR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rGj-Gp-kMQ"/>
+                <constraint firstAttribute="trailing" secondItem="GgR-FK-Jcy" secondAttribute="trailing" constant="20" id="t58-cU-Zuh"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gorilla-climbing-1" width="67" height="72"/>
+        <image name="recommendPlaceholder.png" width="1242" height="2208"/>
+    </resources>
+</document>

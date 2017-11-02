@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  BaoMonkey
+
+  Created by xueyognwei on 2017/10/11.
+  Copyright © 2017年 BaoMonkey. All rights reserved.
+*/
+"BEST" = "Лучший";
+"Tilt your iphone to move monkey" = "Наклоните свой iphone, чтобы переместить Бао";
+"Catch coconut and tap to shoot" = "Поймайте кокос и нажмите, чтобы стрелять";
+"Don't let ennemies destroy your tree" = "Не позволяйте врагам уничтожать ваше дерево";
+"Click to dismiss" = "Нажмите, чтобы закрыть";
+"You're shot." = "ты ранен.";
+"watch an ad video to revive?"="смотреть рекламу видео возродить?";
+"Who is the last winner of this war? The greedy people? The cute animals? You can decide the result! https://itunes.apple.com/app/id1303327260" = "Кто последний победитель этой войны? Жадные люди? Милые животные? Вы можете решить результат! https://itunes.apple.com/app/id1303327260";

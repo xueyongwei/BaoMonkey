@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  BaoMonkey
+
+  Created by xueyognwei on 2017/10/11.
+  Copyright © 2017年 BaoMonkey. All rights reserved.
+*/
+"BEST" = "最高分";
+"Tilt your iphone to move monkey" = "倾斜你的iPhone来控制角色左右移动";
+"Catch coconut and tap to shoot" = "捡起椰子当武器，点击屏幕往下投掷";
+"Don't let ennemies destroy your tree" = "不要让敌人砍掉你的树";
+"Click to dismiss" = "点击关闭提示";
+"Click to dismiss" = "点击关闭提示";
+"You're shot." = "您中枪了";
+"watch an ad video to revive?" = "看个广告原地复活？";
+"crack-tree" = "crack-tree_cn";
+"Not ready,Wait a jiff." = "未就绪，给我3秒钟 ^_^";
+"Who is the last winner of this war? The greedy people? The cute animals? You can decide the result! https://itunes.apple.com/app/id1303327260" = "猴在塔在！你能守住花果山吗？快来试试！https://itunes.apple.com/app/id1303327260";
